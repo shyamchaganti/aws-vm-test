@@ -22,13 +22,3 @@ output "public_ip" {
   description = "Public IP Address of ec2_instance Instance"
   value       = module.ec2_instance.*.public_ip
 }
-
-output "availability_zone" {
-  description = "Public IP Address of ec2_instance Instance"
-  value       = module.ec2_instance.*.availability_zone
-}
-
-output "Primary_Elasitc_IP" {
-  description = "Public IP Address of ec2_instance Instance"
-  value       = module.ec2_instance.*.aws_eip
-}
