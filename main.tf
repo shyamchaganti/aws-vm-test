@@ -1,5 +1,5 @@
 module "ec2_instance" {
-  count = 2
+  count = 1
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "~> 3.0"
 
