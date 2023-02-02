@@ -5,16 +5,16 @@ module "ec2_instance" {
 
   name = "single-instance"
 
-  ami                    = var.ami
+  ami                    = "ami-0b0dcb5067f052a63"
   instance_type          = "t2.micro"
   monitoring             = true
-  vpc_security_group_ids = [var.sg]
-  subnet_id              = var.subnet
+  vpc_security_group_ids = ["sg-0903b7cf1c33d2c49"]
+  subnet_id              = "subnet-0ff6679a826800a61"
 
   tags = {
     Terraform   = "true"
     Environment = "dev"
-    hc-owner-dl = var.hc_owner
+    hc-owner-dl = "test@test.com"
     hc-config-as-code = "terraform"
   }
 }
