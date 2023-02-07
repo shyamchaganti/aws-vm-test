@@ -5,7 +5,7 @@ module "ec2_instance" {
 
   name = "single-instance"
 
-  ami                    = "ami-0b0dcb5067f052a63"
+  ami                    = "ami-0913c47048d853921"
   instance_type          = "t2.micro"
   monitoring             = true
   vpc_security_group_ids = ["sg-03de4eeba95bdda4f"]
