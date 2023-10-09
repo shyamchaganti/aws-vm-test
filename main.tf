@@ -8,8 +8,8 @@ module "ec2_instance" {
   ami                    = "ami-0924fa21f01c23f6e"
   instance_type          = "t2.micro"
   monitoring             = true
-  vpc_security_group_ids = ["sg-003ddde551be18145"]
-  subnet_id              = "subnet-09d2e812f0edb7029"
+  vpc_security_group_ids = ["sg-0601fb5aae1d0194b"]
+  subnet_id              = "subnet-03dcaa293d3dfc5a4"
 
   tags = {
     Terraform   = "true"
